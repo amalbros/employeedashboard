@@ -77,6 +77,12 @@ const Employee = (props) => {
 			key: "8",
 			title: "Phone",
 			dataIndex: "phone"
+		},
+		{
+			key:"9",
+			title:"Image",
+			dataIndex:"avatar",
+			render:(url) => <img src={url} width="50" height="50"></img>
 		}
     ];
 	const id = props.match.params.id;
