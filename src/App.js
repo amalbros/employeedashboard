@@ -1,6 +1,14 @@
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+
+import Dashboard from './components/Dashboard';
+import Employee from './components/Employee';
+
 const App = () => {
 	return (
-		<h1>Programming Challenge</h1>
+		<Router>
+			<Route exact path='/' component={Dashboard} />
+			<Route exact path='/employee/:id' component={Employee} />
+		</Router>
 	);
 }
 
